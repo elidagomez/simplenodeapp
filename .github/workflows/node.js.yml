@@ -16,7 +16,8 @@ jobs:
           LAST_NAME: gomez
         run: echo $MY_VAR $FIRST_NAME $LAST_NAME
       - name: my second steps - elida
-        if: success() //revisa si el paso anterior fue success
+        #revisa si el paso anterior fue success#
+        if: success() 
         run: echo "the previous step has finished successfully"
 
         
