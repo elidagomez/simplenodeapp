@@ -19,6 +19,12 @@ jobs:
         #revisa si el paso anterior fue success#
         if: success() 
         run: echo "the previous step has finished successfully"
+      - name: my third step - elidaaa
+        uses: actions/checkout@v1
+        with:
+          node-version: 12
+          registry-url: https://npm.pkg.github.com/
+          
 
         
       
